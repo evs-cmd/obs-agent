@@ -1,0 +1,46 @@
+A user is investigating a service via its logs. You have already retrieved and
+compressed the relevant signals — produce a focused answer based only on what
+follows. Cite specific log IDs / services from the summary; do NOT invent any.
+
+## Query
+{{ query }}
+
+## Service in scope
+{{ service }}
+
+## Plan (data budgets used)
+- intent: {{ plan.intent }}
+- log_limit: {{ plan.log_limit }}, error_limit: {{ plan.error_limit }}
+
+## Logs summary (clustered)
+total: {{ logs.total_logs }}, unique messages: {{ logs.unique_messages }}
+level distribution: {{ logs.level_distribution }}
+
+Top clusters:
+{% for c in logs.top_clusters[:5] %}
+- [{{ c.level }}] ×{{ c.count }}  {{ c.message }}
+  example log_id: {{ c.example_id }}
+{% endfor %}
+
+## Errors summary (clustered)
+total: {{ errors.total_logs }}
+{% for c in errors.top_clusters[:5] %}
+- [{{ c.level }}] ×{{ c.count }}  {{ c.message }}
+  example log_id: {{ c.example_id }}
+{% endfor %}
+{% if degraded %}
+
+## ⚠ Partial data
+One or more backends returned no data within the budget. Note this in your
+answer; do not invent missing signals.
+{% endif %}
+
+## Output
+
+Write a concise answer (≤6 short bullets or 1 paragraph) covering:
+1. What's happening (the dominant log/error pattern)
+2. Likely cause (only if the evidence supports one — otherwise say "unclear")
+3. Specific log IDs to inspect next
+4. Recommended next action
+
+Do not pad. Do not restate the question. Do not add disclaimers.

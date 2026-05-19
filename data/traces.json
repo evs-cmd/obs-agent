@@ -1,0 +1,1343 @@
+{
+  "traces": [
+    {
+      "trace_id": "t-0001",
+      "correlation_id": null,
+      "service": "checkout-service",
+      "duration_ms": 320,
+      "status": "ok",
+      "timestamp": "2026-05-13T10:20:15Z",
+      "spans": [
+        {
+          "span_id": "s-0001",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 320,
+          "status": "ok",
+          "http_status": 200
+        },
+        {
+          "span_id": "s-0002",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 180,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0001"
+        },
+        {
+          "span_id": "s-0003",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0001"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0003",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 3000,
+      "status": "error",
+      "timestamp": "2026-05-13T10:22:10Z",
+      "spans": [
+        {
+          "span_id": "s-0004",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 3000,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0005",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3000,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0004",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0006",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0004"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0005",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 3200,
+      "status": "error",
+      "timestamp": "2026-05-13T10:22:25Z",
+      "spans": [
+        {
+          "span_id": "s-0007",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 3200,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0008",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3150,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0007",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0009",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0007"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0007",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 3400,
+      "status": "error",
+      "timestamp": "2026-05-13T10:22:40Z",
+      "spans": [
+        {
+          "span_id": "s-0010",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 3400,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0011",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3300,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0010",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0012",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0010"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0009",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 3600,
+      "status": "error",
+      "timestamp": "2026-05-13T10:22:55Z",
+      "spans": [
+        {
+          "span_id": "s-0013",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 3600,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0014",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3450,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0013",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0015",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0013"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0011",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 3800,
+      "status": "error",
+      "timestamp": "2026-05-13T10:23:10Z",
+      "spans": [
+        {
+          "span_id": "s-0016",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 3800,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0017",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3600,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0016",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0018",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0016"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0013",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 4000,
+      "status": "error",
+      "timestamp": "2026-05-13T10:23:25Z",
+      "spans": [
+        {
+          "span_id": "s-0019",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 4000,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0020",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3750,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0019",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0021",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0019"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0015",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 4200,
+      "status": "error",
+      "timestamp": "2026-05-13T10:23:40Z",
+      "spans": [
+        {
+          "span_id": "s-0022",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 4200,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0023",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 3900,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0022",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0024",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0022"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0017",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 4400,
+      "status": "error",
+      "timestamp": "2026-05-13T10:23:55Z",
+      "spans": [
+        {
+          "span_id": "s-0025",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 4400,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0026",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 4050,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0025",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0027",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0025"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0019",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 4600,
+      "status": "error",
+      "timestamp": "2026-05-13T10:24:10Z",
+      "spans": [
+        {
+          "span_id": "s-0028",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 4600,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0029",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 4200,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0028",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0030",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0028"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0021",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 4800,
+      "status": "error",
+      "timestamp": "2026-05-13T10:24:25Z",
+      "spans": [
+        {
+          "span_id": "s-0031",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 4800,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0032",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 4350,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0031",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0033",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0031"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0023",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 5000,
+      "status": "error",
+      "timestamp": "2026-05-13T10:24:40Z",
+      "spans": [
+        {
+          "span_id": "s-0034",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5000,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0035",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 4500,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0034",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0036",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0034"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0025",
+      "correlation_id": "inc-2026-0513-001",
+      "service": "checkout-service",
+      "duration_ms": 5200,
+      "status": "error",
+      "timestamp": "2026-05-13T10:24:55Z",
+      "spans": [
+        {
+          "span_id": "s-0037",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5200,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0038",
+          "service": "payment-service",
+          "operation": "POST /charge",
+          "duration_ms": 4650,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0037",
+          "error": "ConnectionTimeout: stripe-gateway unreachable"
+        },
+        {
+          "span_id": "s-0039",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 45,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0037"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0026",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 1400,
+      "status": "ok",
+      "timestamp": "2026-05-13T14:02:10Z",
+      "spans": [
+        {
+          "span_id": "s-0040",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 1400,
+          "status": "ok",
+          "http_status": 200
+        },
+        {
+          "span_id": "s-0041",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 1100,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0040"
+        },
+        {
+          "span_id": "s-0042",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 300,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0040"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0027",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 1700,
+      "status": "ok",
+      "timestamp": "2026-05-13T14:02:40Z",
+      "spans": [
+        {
+          "span_id": "s-0043",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 1700,
+          "status": "ok",
+          "http_status": 200
+        },
+        {
+          "span_id": "s-0044",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 1350,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0043"
+        },
+        {
+          "span_id": "s-0045",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 350,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0043"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0028",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 2000,
+      "status": "ok",
+      "timestamp": "2026-05-13T14:03:10Z",
+      "spans": [
+        {
+          "span_id": "s-0046",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 2000,
+          "status": "ok",
+          "http_status": 200
+        },
+        {
+          "span_id": "s-0047",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 1600,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0046",
+          "error": "SearchTimeout: index replication lag"
+        },
+        {
+          "span_id": "s-0048",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 400,
+          "status": "ok",
+          "http_status": 200,
+          "parent": "s-0046"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0029",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 2300,
+      "status": "error",
+      "timestamp": "2026-05-13T14:03:40Z",
+      "spans": [
+        {
+          "span_id": "s-0049",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 2300,
+          "status": "error",
+          "http_status": 500
+        },
+        {
+          "span_id": "s-0050",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 1850,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0049",
+          "error": "SearchTimeout: index replication lag"
+        },
+        {
+          "span_id": "s-0051",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 450,
+          "status": "error",
+          "http_status": 500,
+          "parent": "s-0049",
+          "error": "Empty result set from search-service"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0030",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 2600,
+      "status": "error",
+      "timestamp": "2026-05-13T14:04:10Z",
+      "spans": [
+        {
+          "span_id": "s-0052",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 2600,
+          "status": "error",
+          "http_status": 500
+        },
+        {
+          "span_id": "s-0053",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 2100,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0052",
+          "error": "SearchTimeout: index replication lag"
+        },
+        {
+          "span_id": "s-0054",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 500,
+          "status": "error",
+          "http_status": 500,
+          "parent": "s-0052",
+          "error": "Empty result set from search-service"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0031",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 2900,
+      "status": "error",
+      "timestamp": "2026-05-13T14:04:40Z",
+      "spans": [
+        {
+          "span_id": "s-0055",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 2900,
+          "status": "error",
+          "http_status": 500
+        },
+        {
+          "span_id": "s-0056",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 2350,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0055",
+          "error": "SearchTimeout: index replication lag"
+        },
+        {
+          "span_id": "s-0057",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 550,
+          "status": "error",
+          "http_status": 500,
+          "parent": "s-0055",
+          "error": "Empty result set from search-service"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0032",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 3200,
+      "status": "error",
+      "timestamp": "2026-05-13T14:05:10Z",
+      "spans": [
+        {
+          "span_id": "s-0058",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 3200,
+          "status": "error",
+          "http_status": 500
+        },
+        {
+          "span_id": "s-0059",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 2600,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0058",
+          "error": "SearchTimeout: index replication lag"
+        },
+        {
+          "span_id": "s-0060",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 600,
+          "status": "error",
+          "http_status": 500,
+          "parent": "s-0058",
+          "error": "Empty result set from search-service"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0033",
+      "correlation_id": "inc-2026-0513-002",
+      "service": "user-service",
+      "duration_ms": 3500,
+      "status": "error",
+      "timestamp": "2026-05-13T14:05:40Z",
+      "spans": [
+        {
+          "span_id": "s-0061",
+          "service": "user-service",
+          "operation": "GET /search",
+          "duration_ms": 3500,
+          "status": "error",
+          "http_status": 500
+        },
+        {
+          "span_id": "s-0062",
+          "service": "search-service",
+          "operation": "POST /query",
+          "duration_ms": 2850,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0061",
+          "error": "SearchTimeout: index replication lag"
+        },
+        {
+          "span_id": "s-0063",
+          "service": "recommendation-service",
+          "operation": "GET /recommend",
+          "duration_ms": 650,
+          "status": "error",
+          "http_status": 500,
+          "parent": "s-0061",
+          "error": "Empty result set from search-service"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0034",
+      "correlation_id": "inc-2026-0514-001",
+      "service": "checkout-service",
+      "duration_ms": 5000,
+      "status": "error",
+      "timestamp": "2026-05-14T05:30:30Z",
+      "spans": [
+        {
+          "span_id": "s-0064",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5000,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0065",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 4500,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0064",
+          "error": "GC stall: allocation failed after 130ms pause"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0035",
+      "correlation_id": "inc-2026-0514-001",
+      "service": "checkout-service",
+      "duration_ms": 5200,
+      "status": "error",
+      "timestamp": "2026-05-14T05:40:30Z",
+      "spans": [
+        {
+          "span_id": "s-0066",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5200,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0067",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 4680,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0066",
+          "error": "GC stall: allocation failed after 138ms pause"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0036",
+      "correlation_id": "inc-2026-0514-001",
+      "service": "checkout-service",
+      "duration_ms": 5400,
+      "status": "error",
+      "timestamp": "2026-05-14T05:50:30Z",
+      "spans": [
+        {
+          "span_id": "s-0068",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5400,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0069",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 4860,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0068",
+          "error": "GC stall: allocation failed after 146ms pause"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0037",
+      "correlation_id": "inc-2026-0514-001",
+      "service": "checkout-service",
+      "duration_ms": 5600,
+      "status": "error",
+      "timestamp": "2026-05-14T06:00:30Z",
+      "spans": [
+        {
+          "span_id": "s-0070",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5600,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0071",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 5040,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0070",
+          "error": "GC stall: allocation failed after 154ms pause"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0038",
+      "correlation_id": "inc-2026-0514-001",
+      "service": "checkout-service",
+      "duration_ms": 5800,
+      "status": "error",
+      "timestamp": "2026-05-14T06:10:30Z",
+      "spans": [
+        {
+          "span_id": "s-0072",
+          "service": "checkout-service",
+          "operation": "POST /checkout",
+          "duration_ms": 5800,
+          "status": "error",
+          "http_status": 504
+        },
+        {
+          "span_id": "s-0073",
+          "service": "inventory-service",
+          "operation": "POST /reserve",
+          "duration_ms": 5220,
+          "status": "error",
+          "http_status": 504,
+          "parent": "s-0072",
+          "error": "GC stall: allocation failed after 162ms pause"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0039",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:15:30Z",
+      "spans": [
+        {
+          "span_id": "s-0074",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0075",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0074",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0040",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:15:50Z",
+      "spans": [
+        {
+          "span_id": "s-0076",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0077",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0076",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0041",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:16:10Z",
+      "spans": [
+        {
+          "span_id": "s-0078",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0079",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0078",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0042",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:16:30Z",
+      "spans": [
+        {
+          "span_id": "s-0080",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0081",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0080",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0043",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:16:50Z",
+      "spans": [
+        {
+          "span_id": "s-0082",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0083",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0082",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0044",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:17:10Z",
+      "spans": [
+        {
+          "span_id": "s-0084",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0085",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0084",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0045",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:17:30Z",
+      "spans": [
+        {
+          "span_id": "s-0086",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0087",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0086",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0046",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:17:50Z",
+      "spans": [
+        {
+          "span_id": "s-0088",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0089",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0088",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0047",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:18:10Z",
+      "spans": [
+        {
+          "span_id": "s-0090",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0091",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0090",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0048",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:18:30Z",
+      "spans": [
+        {
+          "span_id": "s-0092",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0093",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0092",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0049",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:18:50Z",
+      "spans": [
+        {
+          "span_id": "s-0094",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0095",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0094",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0050",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:19:10Z",
+      "spans": [
+        {
+          "span_id": "s-0096",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0097",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0096",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0051",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:19:30Z",
+      "spans": [
+        {
+          "span_id": "s-0098",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0099",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0098",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0052",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:19:50Z",
+      "spans": [
+        {
+          "span_id": "s-0100",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0101",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0100",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    },
+    {
+      "trace_id": "t-0053",
+      "correlation_id": "inc-2026-0514-002",
+      "service": "gateway-service",
+      "duration_ms": 15,
+      "status": "error",
+      "timestamp": "2026-05-14T08:20:10Z",
+      "spans": [
+        {
+          "span_id": "s-0102",
+          "service": "gateway-service",
+          "operation": "POST /api/checkout",
+          "duration_ms": 15,
+          "status": "error",
+          "http_status": 401
+        },
+        {
+          "span_id": "s-0103",
+          "service": "checkout-service",
+          "operation": "middleware.auth",
+          "duration_ms": 5,
+          "status": "error",
+          "http_status": 401,
+          "parent": "s-0102",
+          "error": "JWTVerificationError: unknown key ID"
+        }
+      ]
+    }
+  ]
+}

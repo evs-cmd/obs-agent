@@ -1,0 +1,39 @@
+Incident query: {{ query }}
+Target service: {{ service }}
+
+Correlated context (trace_id: {{ trace_id }}, correlation_id: {{ correlation_id }}):
+  Services involved: {{ services }}
+  Root service: {{ root_service }}
+
+=== Compressed signals (use these as the primary evidence) ===
+
+Log signal (clustered + frequency-ranked):
+{{ log_summary }}
+
+Trace signal (skeletons of slowest/error traces):
+{{ trace_summary }}
+
+Metric signal (p50/p95/p99 + anomalies per service):
+{{ metric_summary }}
+
+Service-call graph (caller → downstream callees, derived from span parents —
+use this to determine cascade direction; the upstream service is the more
+likely root cause when both look degraded):
+{{ dependency_graph }}
+
+=== Raw context (use these only to cite specific IDs) ===
+
+Errors:
+{{ errors }}
+
+Raw trace samples:
+{{ raw_traces }}
+
+Raw log samples:
+{{ raw_logs }}
+
+=== Drill-down findings ===
+{{ drill_down }}
+
+=== Past investigations ===
+{{ memories }}

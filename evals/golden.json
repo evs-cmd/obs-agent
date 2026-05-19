@@ -1,0 +1,232 @@
+{
+  "queries": [
+    {
+      "id": "route-logs-001",
+      "query": "Show me all error logs for payment-service",
+      "expected_route": "logs",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-logs-002",
+      "query": "What critical logs fired from alertmanager?",
+      "expected_route": "logs",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-logs-003",
+      "query": "Get the logs around log-0042",
+      "expected_route": "logs",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-logs-004",
+      "query": "Show me logs correlated to incident inc-2026-0514-002",
+      "expected_route": "logs",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-logs-005",
+      "query": "Are there any errors in notification-service related to rate limiting?",
+      "expected_route": "logs",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-logs-006",
+      "query": "Show me the WARN and ERROR logs from inventory-service",
+      "expected_route": "logs",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-metrics-001",
+      "query": "What's the error rate trend for payment-service?",
+      "expected_route": "metrics",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-metrics-002",
+      "query": "Show me the p99 latency for search-service",
+      "expected_route": "metrics",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-metrics-003",
+      "query": "What's the DB pool utilization for payment-service?",
+      "expected_route": "metrics",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-metrics-004",
+      "query": "How is the email send rate for notification-service changing?",
+      "expected_route": "metrics",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-metrics-005",
+      "query": "Show me the kafka consumer lag for search-service",
+      "expected_route": "metrics",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-metrics-006",
+      "query": "What's the circuit breaker state for payment-service?",
+      "expected_route": "metrics",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-traces-001",
+      "query": "Show me error traces for checkout-service",
+      "expected_route": "traces",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-traces-002",
+      "query": "Which spans are slowest in the checkout flow?",
+      "expected_route": "traces",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-traces-003",
+      "query": "Get the full trace for t-0005",
+      "expected_route": "traces",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-traces-004",
+      "query": "Find spans slower than 2000ms in payment-service",
+      "expected_route": "traces",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-traces-005",
+      "query": "Show me traces correlated to inc-2026-0513-002",
+      "expected_route": "traces",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-traces-006",
+      "query": "What's the latency breakdown for the user-service search traces?",
+      "expected_route": "traces",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-incident-001",
+      "query": "Why is checkout failing? Payment errors are spiking",
+      "expected_route": "incident",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-incident-002",
+      "query": "Investigate the Kafka consumer lag incident on search-service",
+      "expected_route": "incident",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-incident-003",
+      "query": "What caused the inventory-service OOM crash?",
+      "expected_route": "incident",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-incident-004",
+      "query": "Why are all services returning 401 errors?",
+      "expected_route": "incident",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-incident-005",
+      "query": "Notification emails are delayed — what's going on?",
+      "expected_route": "incident",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-incident-006",
+      "query": "Investigate incident inc-2026-0513-001 across all services",
+      "expected_route": "incident",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-oos-001",
+      "query": "Why is the earth blue?",
+      "expected_route": "out_of_scope",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-oos-002",
+      "query": "Tell me a joke about kubernetes",
+      "expected_route": "out_of_scope",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-oos-003",
+      "query": "What is the weather in Berlin today?",
+      "expected_route": "out_of_scope",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-oos-004",
+      "query": "Write a Python function that reverses a linked list",
+      "expected_route": "out_of_scope",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "route-oos-005",
+      "query": "hi",
+      "expected_route": "out_of_scope",
+      "min_confidence": 0.6
+    },
+    {
+      "id": "route-oos-006",
+      "query": "What's 17 * 42?",
+      "expected_route": "out_of_scope",
+      "min_confidence": 0.7
+    },
+    {
+      "id": "synth-001",
+      "query": "Why is checkout failing? Payment errors are spiking",
+      "expected_route": "incident",
+      "expected_services": ["checkout-service", "payment-service"],
+      "expected_keywords": ["stripe", "circuit breaker", "connection", "timeout", "pool"],
+      "min_confidence": 0.6
+    },
+    {
+      "id": "synth-002",
+      "query": "Investigate the payment service incident",
+      "expected_route": "incident",
+      "expected_services": ["payment-service"],
+      "expected_keywords": ["stripe", "circuit breaker", "db", "pool"],
+      "min_confidence": 0.6
+    },
+    {
+      "id": "synth-003",
+      "query": "Investigate the Kafka consumer lag incident on search-service",
+      "expected_route": "incident",
+      "expected_services": ["search-service", "recommendation-service"],
+      "expected_keywords": ["kafka", "consumer", "lag", "stale", "index"],
+      "min_confidence": 0.6
+    },
+    {
+      "id": "synth-004",
+      "query": "What caused the inventory-service OOM crash?",
+      "expected_route": "incident",
+      "expected_services": ["inventory-service"],
+      "expected_keywords": ["memory", "heap", "gc", "oom"],
+      "min_confidence": 0.6
+    },
+    {
+      "id": "synth-005",
+      "query": "Why are all services returning 401 errors?",
+      "expected_route": "incident",
+      "expected_services": ["gateway-service", "checkout-service"],
+      "expected_keywords": ["jwt", "key", "auth", "401", "jwks"],
+      "min_confidence": 0.6
+    },
+    {
+      "id": "synth-006",
+      "query": "Notification emails are delayed — what's going on?",
+      "expected_route": "incident",
+      "expected_services": ["notification-service"],
+      "expected_keywords": ["rate limit", "429", "queue", "email"],
+      "min_confidence": 0.6
+    }
+  ]
+}

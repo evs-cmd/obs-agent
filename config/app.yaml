@@ -1,0 +1,68 @@
+llm:
+  router_model: gpt-4o-mini
+  agent_model: gpt-4o-mini
+  complex_model: gpt-4o
+  temperature: 0.0
+  max_tokens: 1000
+
+router:
+  # When the router parse fails or confidence is below threshold, route to
+  # out_of_scope rather than silently confabulating an incident report.
+  fallback_route: out_of_scope
+  confidence_threshold: 0.5
+  max_retries: 2
+
+# ─── Agents ────────────────────────────────────────────────────────────────
+# Tool dispatch is just-in-time: per query, BaseAgent asks the ToolIndex for
+# the top-`tool_k` most relevant tools, with `always_on_tools` pinned. To lock
+# an agent to an exact set, set tool_k = len(always_on_tools).
+
+agents:
+  traces:
+    enabled: true
+    class: TracesAgent
+    model: gpt-4o-mini
+    description: "Handles distributed tracing and latency analysis"
+    system_prompt_template: traces_system
+    tool_k: 5
+    always_on_tools: [search_traces, get_trace]
+
+  logs:
+    enabled: true
+    class: LogsAgent
+    model: gpt-4o-mini
+    description: "Handles log analysis and error pattern queries"
+    system_prompt_template: logs_system
+    tool_k: 4
+    always_on_tools: [search_logs, get_error_logs]
+
+  metrics:
+    enabled: true
+    class: MetricsAgent
+    model: gpt-4o-mini
+    description: "Handles metrics, error rates, and service health queries"
+    system_prompt_template: metrics_system
+    tool_k: 3
+    always_on_tools: [get_metrics]
+
+  incident:
+    enabled: true
+    class: IncidentAgent
+    model: gpt-4o
+    description: "Multi-step incident investigation across all data sources"
+    system_prompt_template: incident_system
+    tool_k: 8
+    always_on_tools: [get_incident_context]
+
+incident:
+  services: [checkout-service, payment-service, gateway-service, inventory-service, user-service]
+  tool_timeout: 5
+  max_tool_calls: 10
+
+prompts:
+  incident_system: incident_system.j2
+  incident_synthesis: incident_synthesis.j2
+
+observability:
+  log_level: INFO
+  trace_agents: true

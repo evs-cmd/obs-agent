@@ -1,0 +1,86 @@
+# Main demo stack — everything a reviewer needs from a single `docker compose up`.
+#
+#   app         → FastAPI POST /ask (SSE streaming)         :8000
+#   dashboard   → DuckDB UI over events.jsonl               :4213
+#   mcp         → Unified MCP server (SSE transport)        :9000
+#
+# Quickstart:
+#   cp .env.example .env  &&  edit OPENAI_API_KEY
+#   docker compose up -d
+#   curl -N -X POST http://localhost:8000/ask \
+#        -H 'Content-Type: application/json' \
+#        -d '{"message":"Why is checkout failing?"}'
+#
+# Shared telemetry (host ↔ containers):
+#   `app` writes request rows to /var/obs/events.jsonl, which is bind-mounted
+#   from ./events.jsonl on the host. The `dashboard` service reads that same
+#   file *and* writes ./obs.duckdb (DuckDB UI state — notebooks, query history).
+#   Bind-mounting (not a named volume) means host-run `make eval` and
+#   in-container `POST /ask` append to the same physical file, so the dashboard
+#   inside Docker shows both. The `replays/` directory is bind-mounted too so
+#   `make replay ID=<request_id>` on the host can find snapshots written by
+#   containerized `/ask` calls.
+#
+#   `make up` `touch`es these files first so Docker doesn't create directories
+#   where files are expected.
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Docker-internal overrides — these always use service names, never the
+      # localhost values that .env might have for host development:
+      MCP_SSE_URL: http://mcp:9000/sse
+      OTEL_SERVICE_NAME: obs-agent
+      OTEL_CONSOLE: ${OTEL_CONSOLE:-1}
+      # Shared event log so the dashboard sees app rows.
+      OBS_EVENTS_PATH: /var/obs/events.jsonl
+    volumes:
+      - ./events.jsonl:/var/obs/events.jsonl
+      - ./replays:/app/replays
+    depends_on:
+      mcp:
+        condition: service_healthy
+
+  dashboard:
+    build: .
+    command: ["python", "scripts/dashboard.py"]
+    ports:
+      - "4213:4213"
+    environment:
+      OBS_EVENTS_PATH: /var/obs/events.jsonl
+      # DuckDB state (notebooks, query history) lives in a named volume — a
+      # bind-mount would need a valid DuckDB file to exist on the host first,
+      # which is a chicken-and-egg problem on a clean checkout.
+      OBS_DUCKDB_PATH: /var/duckdb/obs.duckdb
+    volumes:
+      # events.jsonl is bind-mounted so host `make eval` and container `/ask`
+      # write the same file the dashboard reads. obs.duckdb stays in a
+      # docker-managed volume — DuckDB initializes it on first connect.
+      - ./events.jsonl:/var/obs/events.jsonl
+      - duckdb-state:/var/duckdb
+
+  mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile.mcp
+    ports:
+      - "9000:9000"
+    healthcheck:
+      # `/sse` is a long-lived stream — plain `curl` hangs waiting for the
+      # body to end. `--max-time 1` bounds it; exit code 28 (timeout) means
+      # the server *did* answer with 200 OK before the cutoff, so we treat
+      # it as healthy. Exit 0 also counts (very fast 200 with no body yet).
+      test: ["CMD-SHELL", "curl -fsS --max-time 1 http://localhost:9000/sse -o /dev/null; rc=$$?; [ $$rc -eq 0 ] || [ $$rc -eq 28 ]"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  duckdb-state:
+

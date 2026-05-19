@@ -1,0 +1,2965 @@
+{
+  "metrics": [
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.01,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 100.489,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.991,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "throughput_rpm",
+      "value": 838.687,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.009,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 140.559,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "checkout-service",
+      "metric": "success_rate",
+      "value": 0.998,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "checkout-service",
+      "metric": "throughput_rpm",
+      "value": 1091.893,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.006,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "gateway-service",
+      "metric": "p99_latency_ms",
+      "value": 195.967,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "gateway-service",
+      "metric": "success_rate",
+      "value": 0.994,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "gateway-service",
+      "metric": "throughput_rpm",
+      "value": 1020.816,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 12,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "db_pool_max",
+      "value": 50,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:00Z",
+      "service": "payment-service",
+      "metric": "circuit_breaker_state",
+      "value": 0,
+      "unit": "state"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.008,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 142.778,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.999,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "payment-service",
+      "metric": "throughput_rpm",
+      "value": 1030.941,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.007,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 56.874,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "checkout-service",
+      "metric": "success_rate",
+      "value": 0.992,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "checkout-service",
+      "metric": "throughput_rpm",
+      "value": 915.755,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.002,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "gateway-service",
+      "metric": "p99_latency_ms",
+      "value": 84.919,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "gateway-service",
+      "metric": "success_rate",
+      "value": 0.991,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:05Z",
+      "service": "gateway-service",
+      "metric": "throughput_rpm",
+      "value": 911.189,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.007,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 104.725,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.994,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "payment-service",
+      "metric": "throughput_rpm",
+      "value": 883.803,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.003,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 190.498,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "checkout-service",
+      "metric": "success_rate",
+      "value": 0.996,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "checkout-service",
+      "metric": "throughput_rpm",
+      "value": 1043.652,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.003,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "gateway-service",
+      "metric": "p99_latency_ms",
+      "value": 159.369,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "gateway-service",
+      "metric": "success_rate",
+      "value": 0.992,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:20:10Z",
+      "service": "gateway-service",
+      "metric": "throughput_rpm",
+      "value": 951.782,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.05,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:10Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 3000,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:10Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 25,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:10Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.95,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.03,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:10Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 3200,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:25Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.12,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:25Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 3200,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:25Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 28,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:25Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.88,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:25Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.09,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:25Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 3450,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:40Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.19,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:40Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 3400,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:40Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 31,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:40Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.81,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:40Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.15,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:40Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 3700,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:55Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.26,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:55Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 3600,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:55Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 34,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:55Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.74,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:55Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:22:55Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 3950,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:10Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 3800,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:10Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 37,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:10Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.67,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.27,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:10Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 4200,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:25Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.4,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:25Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 4000,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:25Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 40,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:25Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:25Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:25Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 4450,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:30Z",
+      "service": "payment-service",
+      "metric": "circuit_breaker_state",
+      "value": 1,
+      "unit": "state"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:40Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.47,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:40Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 4200,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:40Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 43,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:40Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:40Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.39,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:40Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 4700,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:55Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.54,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:55Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 4400,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:55Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 46,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:55Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.46,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:55Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:23:55Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 4950,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.61,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:10Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 4600,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:10Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 49,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:10Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.39,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.51,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:10Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 5200,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:25Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.68,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:25Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 4800,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:25Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 50,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:25Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.32,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:25Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.57,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:25Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 5450,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:40Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.75,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:40Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 5000,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:40Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 50,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:40Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:40Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.63,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:40Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 5700,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:55Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.82,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:55Z",
+      "service": "payment-service",
+      "metric": "p99_latency_ms",
+      "value": 5200,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:55Z",
+      "service": "payment-service",
+      "metric": "db_pool_active",
+      "value": 50,
+      "unit": "connections"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:55Z",
+      "service": "payment-service",
+      "metric": "success_rate",
+      "value": 0.18,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:55Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.69,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T10:24:55Z",
+      "service": "checkout-service",
+      "metric": "p99_latency_ms",
+      "value": 5950,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 45.373,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "search-service",
+      "metric": "throughput_rpm",
+      "value": 824.283,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "recommendation-service",
+      "metric": "p99_latency_ms",
+      "value": 83.782,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "recommendation-service",
+      "metric": "throughput_rpm",
+      "value": 555.938,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "user-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "user-service",
+      "metric": "p99_latency_ms",
+      "value": 87.526,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:00:00Z",
+      "service": "user-service",
+      "metric": "throughput_rpm",
+      "value": 1305.046,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:00Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 500,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:00Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 100,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:00Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.01,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:00Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:30Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 2000,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:30Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 500,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.06,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:01:30Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:00Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 4500,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:00Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 900,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:00Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.11,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:00Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:30Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 8000,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:30Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 1300,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.16,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:02:30Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:00Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 12500,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:00Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 1700,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:00Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:00Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.085,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:30Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 18000,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:30Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 2100,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.26,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:03:30Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.165,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:00Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 24500,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:00Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 2500,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:00Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.31,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:00Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.245,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:30Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 32000,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:30Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 2900,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.36,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:04:30Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.325,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:00Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 40500,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:00Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 3300,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:00Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.41,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:00Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.4,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:30Z",
+      "service": "search-service",
+      "metric": "kafka_consumer_lag",
+      "value": 50000,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:30Z",
+      "service": "search-service",
+      "metric": "p99_latency_ms",
+      "value": 3700,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.46,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-13T14:05:30Z",
+      "service": "recommendation-service",
+      "metric": "error_rate",
+      "value": 0.4,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:00:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 256,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T03:00:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 10,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:00:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 80,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:00:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:00:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 1000,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T03:10:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 301,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T03:10:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 10,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:10:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 83,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:10:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:10:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 960,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T03:20:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 346,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T03:20:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 10,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:20:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 92,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:20:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:20:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 920,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T03:30:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 391,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T03:30:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 10,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:30:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 107,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:30:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:30:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 880,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T03:40:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 436,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T03:40:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 10,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:40:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 128,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:40:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:40:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 840,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T03:50:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 481,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T03:50:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 10,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:50:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 155,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T03:50:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T03:50:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 800,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T04:00:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 526,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T04:00:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 58,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:00:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 188,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:00:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T04:00:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 760,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T04:10:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 571,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T04:10:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 66,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:10:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 227,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:10:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T04:10:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 720,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T04:20:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 616,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T04:20:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 74,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:20:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 272,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:20:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T04:20:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 680,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T04:30:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 661,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T04:30:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 82,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:30:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 323,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:30:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T04:30:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 640,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T04:40:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 706,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T04:40:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 90,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:40:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 380,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:40:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.005,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T04:40:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 600,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T04:50:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 751,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T04:50:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 98,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:50:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 443,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T04:50:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.045,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T04:50:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 560,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T05:00:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 796,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T05:00:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 106,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:00:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 512,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:00:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.085,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T05:00:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 520,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T05:10:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 841,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T05:10:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 114,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:10:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 587,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:10:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.125,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T05:10:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 480,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T05:20:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 886,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T05:20:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 122,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:20:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 668,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:20:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.165,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T05:20:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 440,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T05:30:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 931,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T05:30:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 130,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:30:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 755,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:30:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.205,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T05:30:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 400,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T05:40:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 976,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T05:40:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 138,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:40:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 848,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:40:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.245,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T05:40:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 360,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T05:50:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 1021,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T05:50:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 146,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:50:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 947,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T05:50:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.285,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T05:50:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 320,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T06:00:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 1066,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T06:00:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 154,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T06:00:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 1052,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T06:00:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.325,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T06:00:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 280,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T06:10:00Z",
+      "service": "inventory-service",
+      "metric": "heap_used_mb",
+      "value": 1111,
+      "unit": "MB"
+    },
+    {
+      "timestamp": "2026-05-14T06:10:00Z",
+      "service": "inventory-service",
+      "metric": "gc_pause_ms",
+      "value": 162,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T06:10:00Z",
+      "service": "inventory-service",
+      "metric": "p99_latency_ms",
+      "value": 1163,
+      "unit": "ms"
+    },
+    {
+      "timestamp": "2026-05-14T06:10:00Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.365,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T06:10:00Z",
+      "service": "inventory-service",
+      "metric": "throughput_rpm",
+      "value": 240,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.1,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.08,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.05,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.05,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.05,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.05,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.05,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.15,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.13,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.09,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.09,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.09,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.09,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:15:50Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.09,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.2,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.18,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.13,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.13,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.13,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.13,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:10Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.13,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.23,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.17,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.17,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.17,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.17,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.17,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.3,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.28,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:16:50Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.21,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.35,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:10Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.25,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.4,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.38,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.29,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.29,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.29,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.29,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.29,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.43,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:17:50Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.33,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.5,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.48,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.37,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.37,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.37,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.37,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:10Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.37,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.55,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.41,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.41,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.41,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.41,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.41,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.58,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:18:50Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.65,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.63,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.49,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.49,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.49,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.49,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:10Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.49,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.7,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.65,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.53,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.7,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.65,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.57,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.57,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.57,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.57,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:19:50Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.57,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "gateway-service",
+      "metric": "error_rate",
+      "value": 0.7,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "gateway-service",
+      "metric": "http_401_rate",
+      "value": 0.65,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "checkout-service",
+      "metric": "error_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "payment-service",
+      "metric": "error_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "inventory-service",
+      "metric": "error_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "search-service",
+      "metric": "error_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T08:20:10Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.6,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:00:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 50,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:00:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 100,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:00:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.1,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:01:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 100,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:01:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 92,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:01:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.17,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:01:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 150,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:01:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 84,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:01:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.24,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:02:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 200,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:02:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 76,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:02:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.31,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:02:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 250,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:02:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 68,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:02:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.38,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:03:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 300,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:03:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 60,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:03:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.45,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:03:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 350,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:03:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 52,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:03:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.52,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:04:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 400,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:04:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 44,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:04:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.59,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:04:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 450,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:04:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 36,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:04:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.66,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:05:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 500,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:05:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 28,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:05:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.73,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:05:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 550,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:05:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 20,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:05:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.8,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:06:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 600,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:06:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 12,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:06:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.87,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:06:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 650,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:06:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 4,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:06:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:07:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 700,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:07:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 0,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:07:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:07:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 750,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:07:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 0,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:07:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:08:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 800,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:08:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 0,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:08:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:08:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 850,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:08:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 0,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:08:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:09:00Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 900,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:09:00Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 0,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:09:00Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    },
+    {
+      "timestamp": "2026-05-14T11:09:30Z",
+      "service": "notification-service",
+      "metric": "email_queue_depth",
+      "value": 950,
+      "unit": "messages"
+    },
+    {
+      "timestamp": "2026-05-14T11:09:30Z",
+      "service": "notification-service",
+      "metric": "email_send_rate",
+      "value": 0,
+      "unit": "rpm"
+    },
+    {
+      "timestamp": "2026-05-14T11:09:30Z",
+      "service": "notification-service",
+      "metric": "error_rate",
+      "value": 0.9,
+      "unit": "ratio"
+    }
+  ]
+}

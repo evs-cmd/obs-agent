@@ -1,0 +1,38 @@
+# Allowlist of MCP tools the app will accept from the upstream server.
+#
+# ToolHub.setup() refuses to start if the MCP server returns a tool not in
+# this list — protects against schema poisoning, accidental over-exposure
+# from a misconfigured server, and unsynced deploys.
+#
+# Adding a new tool? Update this file in the same PR. CI should `make test`
+# (the smoke path imports ToolHub which validates this file).
+#
+# This file is intentionally a flat allowlist. Stronger pinning (sha256 of
+# tool description) is a v2 — descriptions change with prompt tuning, hashing
+# them rejects legitimate edits.
+
+allowed:
+  # Logs
+  - search_logs
+  - get_error_logs
+  - get_log_context
+  - get_logs_by_trace
+  - get_logs_by_correlation
+
+  # Metrics
+  - get_metrics
+  - get_metric
+
+  # Traces
+  - search_traces
+  - get_trace
+  - get_slow_spans
+  - get_traces_by_correlation
+
+  # Errors
+  - get_errors
+  - get_error_by_trace
+  - get_error_by_correlation
+
+  # Cross-signal correlation
+  - get_incident_context

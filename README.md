@@ -91,10 +91,11 @@ The choices that shape this system, with the trade-off each one accepts:
 - **Router is an LLM with structured output, not regex.** `gpt-4o-mini`
   returns `{route, reasoning, confidence}` validated by a Pydantic schema.
   Below a confidence threshold (`router.confidence_threshold` in
-  `config/app.yaml`), it falls back to `incident` (the agent best
-  equipped to handle ambiguity). One JSON-mode call per request, retry on
-  parse failure, fixed cost. Pattern-match routers can't classify novel
-  phrasings; an LLM can.
+  `config/app.yaml`), it falls back to `out_of_scope` so the system
+  refuses rather than confabulating an answer on a query it barely
+  understood. One JSON-mode call per request, retry on parse failure,
+  fixed cost. Pattern-match routers can't classify novel phrasings; an
+  LLM can.
 
 - **MCP is the only seam between agents and data.** Tools live behind a
   FastMCP server (SSE transport); the app talks to it via

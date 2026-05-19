@@ -71,7 +71,7 @@ class Settings(BaseSettings):
     # On timeout the request degrades gracefully (returns a partial answer
     # instead of hanging the SSE). Override per agent via
     # `node_timeout_ms:` in config/app.yaml. Set to 0 to disable.
-    node_timeout_ms: int = 80000
+    node_timeout_ms: int = 15000
 
     # ─── LLM-based query planner ──────────────────────────────────────
     # Off by default: keyword planner is free and good enough for the demo.

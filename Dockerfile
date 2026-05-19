@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY pyproject.toml README.md ./
 # `ui` extra pulls duckdb so the same image can run the FastAPI app or the
 # DuckDB dashboard — selected via CMD override in docker-compose.yml.
-RUN pip install --upgrade pip && pip install -e ".[telemetry,ui]"
+RUN pip install --upgrade pip && pip install ".[telemetry,ui]"
 
 COPY src ./src
 COPY config ./config

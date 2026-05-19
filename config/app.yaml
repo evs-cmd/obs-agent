@@ -53,6 +53,7 @@ agents:
     system_prompt_template: incident_system
     tool_k: 8
     always_on_tools: [get_incident_context]
+    node_timeout_ms: 30000
 
 incident:
   services: [checkout-service, payment-service, gateway-service, inventory-service, user-service]

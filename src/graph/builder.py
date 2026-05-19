@@ -129,8 +129,3 @@ def build_graph(
         graph.add_edge(name, END)
 
     return graph.compile(checkpointer=checkpointer) if checkpointer else graph.compile()
-
-
-# Module-level graph export — handy for introspection / tooling that
-# wants a no-checkpointer instance.
-graph = build_graph()
